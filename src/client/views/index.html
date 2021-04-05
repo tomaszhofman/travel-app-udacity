@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Traval App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">TRAVEL PLANNER</div>
+
+      <div>
+        <form class="" onsubmit="return Client.handleSubmit(event)">
+          <div class="input">
+            <input
+              class="input__item"
+              id="name"
+              type="text"
+              name="input"
+              value=""
+              onblur="onBlur()"
+              placeholder=" "
+            />
+            <label class="label" for="name">Destination Country</label>
+          </div>
+
+          <div class="input">
+            <input
+              class="input__item"
+              id="date"
+              type="text"
+              name="input"
+              value=""
+              onblur="onBlur()"
+              placeholder=" "
+            />
+            <label class="label" for="date">Date (YYYY/MM/DD)</label>
+          </div>
+
+          <input
+            class="btn"
+            type="submit"
+            name=""
+            value="Add trip"
+            onclick="return Client.handleSubmit(event)"
+            onsubmit="return handleSubmit(event)"
+          />
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="title">My Trips</h1>
+
+      <section>
+        <div id="results"></div>
+
+        <!-- card -->
+
+        <div class="grid-container"></div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script> -->
+  </body>
+</html>

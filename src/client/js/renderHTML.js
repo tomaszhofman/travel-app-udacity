@@ -28,7 +28,9 @@ export const renderHTML = (
       <div>
         <div class="flex">
           <img
-            src="https://www.weatherbit.io/static/img/icons/${weatherData.icon}.png"
+            src="https://www.weatherbit.io/static/img/icons/${
+              weatherData.icon
+            }.png"
           />
           <span class="w-title">${weatherData.hightTemp}°</span>
         </div> 
@@ -46,7 +48,7 @@ export const renderHTML = (
             style="font-size: 14px; margin-right: 6px; color: grey"
           ></i>
           <p>
-            <span class="mr-5 font-bold">${weatherData.uv}</span
+            <span class="mr-5 font-bold">${weatherData.uv.toFixed(2)}</span
             ><span class="text-gray text-sm">UV</span>
           </p>
         </div>

@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 
 // designates what port the app will listen to for incoming requests
 app.listen(9002, function () {
-  console.log('Example app listening on port 8080!');
+  console.log('Example app listening on port 9002!');
 });
 
 app.get('/api', (req, res) => {
